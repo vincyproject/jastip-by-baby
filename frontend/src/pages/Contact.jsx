@@ -15,11 +15,17 @@ const Contact = () => {
         <img className='w-full md:max-w-[480px]' src={assets.contact_img} alt="" />
         <div className='flex flex-col justify-center items-start gap-6'>
           <p className='font-semibold text-xl text-gray-600'>Our Store</p>
-          <p className=' text-gray-500'>54709 Willms Station <br /> Suite 350, Washington, USA</p>
-          <p className=' text-gray-500'>Tel: (415) 555-0132 <br /> Email: admin@forever.com</p>
-          <p className='font-semibold text-xl text-gray-600'>Careers at Forever</p>
-          <p className=' text-gray-500'>Learn more about our teams and job openings.</p>
-          <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'>Explore Jobs</button>
+          <p className=' text-gray-500'>ITC Cempaka Mas Lantai 1 Blok F, Jl. Letjen Suprapto No.305 Kav.1 <br />Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640</p>
+          <p className=' text-gray-500'>WA: +62-877-8622-2246 <br /> Email: jastip.bybabywork@gmail.com</p>
+          <p className='font-semibold text-xl text-gray-600'>See more about Jastip by Baby</p>
+          <p className=' text-gray-500'>Learn more about activites our Jastip by baby.</p>
+          
+          <button
+              onClick={() => window.open('https://www.tiktok.com/@jastip.bybaby?_t=ZS-8t1bJZ3XVVC&_r=1', '_blank')}
+              className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'
+            >
+              Visit Tiktok
+            </button>
         </div>
       </div>
 

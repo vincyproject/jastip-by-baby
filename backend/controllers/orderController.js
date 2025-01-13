@@ -3,9 +3,9 @@ import userModel from "../models/userModel.js";
 import Stripe from 'stripe'
 import razorpay from 'razorpay'
 
-// global variables
-const currency = 'inr'
-const deliveryCharge = 10
+// global variabless
+const currency = 'idr'
+const deliveryCharge = 0
 
 // gateway initialize
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
