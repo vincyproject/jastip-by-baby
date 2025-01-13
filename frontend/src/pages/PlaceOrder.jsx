@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import bankLogo from './bank.svg'
 
 const PlaceOrder = () => {
-  const [method, setMethod] = useState('cod');
+  const [method, setMethod] = useState('transfer');
   const { 
     navigate, 
     backendUrl, 
@@ -64,7 +64,7 @@ const PlaceOrder = () => {
       };
 
       switch (method) {
-        case 'cod':
+        case 'transfer':
           const response = await axios.post(backendUrl + '/api/order/place', orderData, { headers: { token } });
           if (response.data.success) {
             setCartItems({});
@@ -187,8 +187,8 @@ const PlaceOrder = () => {
         <div className='mt-12'>
           <Title text1={'PAYMENT'} text2={'METHOD'} />
           <div className='flex gap-3 flex-col lg:flex-row'>
-          <div onClick={() => setMethod('cod')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
-            <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'cod' ? 'bg-green-400' : ''}`}></p>
+          <div onClick={() => setMethod('transfer')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+            <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'transfer' ? 'bg-green-400' : ''}`}></p>
                 <div> {/* Bungkus elemen gambar dan teks */}
                 <img src={bankLogo} alt="Logo Bank" className="h-[50px] w-[100px]" /> {/* Tambahkan gambar logo */}
                     <p className='text-gray-500 text-sm font-medium mx-4'>2330129018310</p> {/* Nomor rekening */}

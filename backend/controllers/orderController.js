@@ -27,7 +27,7 @@ const placeOrder = async (req,res) => {
             items,
             address,
             amount,
-            paymentMethod:"COD",
+            paymentMethod:"transfer",
             payment:false,
             date: Date.now()
         }
