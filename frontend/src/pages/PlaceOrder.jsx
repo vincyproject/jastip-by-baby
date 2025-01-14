@@ -4,7 +4,10 @@ import CartTotal from '../components/CartTotal';
 import { ShopContext } from '../context/ShopContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import bankLogo from './bank.svg'
+import bca from './bca.svg'
+import mandiri from './mandiri.svg'
+import bni from './bni.png'
+import bri from './bri.png'
 
 const PlaceOrder = () => {
   const [method, setMethod] = useState('transfer');
@@ -190,10 +193,25 @@ const PlaceOrder = () => {
           <div onClick={() => setMethod('transfer')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
             <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'transfer' ? 'bg-green-400' : ''}`}></p>
                 <div> {/* Bungkus elemen gambar dan teks */}
-                <img src={bankLogo} alt="Logo Bank" className="h-[50px] w-[100px]" /> {/* Tambahkan gambar logo */}
-                    <p className='text-gray-500 text-sm font-medium mx-4'>2330129018310</p> {/* Nomor rekening */}
-                    <p className='text-gray-500 text-sm font-medium mx-4'>A/N Jastip By Baby</p> {/* Nama pemilik rekening */}
+                <img src={bca} alt="Logo Bank" className="h-[50px] w-[100px]" /> {/* Tambahkan gambar logo */}
+                    <p className='text-gray-500 text-sm font-medium mx-4'>0040236864</p> {/* Nomor rekening */}
+                    <p className='text-gray-500 text-sm font-medium mx-4'>Masdian Haerunisah</p> {/* Nama pemilik rekening */}
                 </div>
+                <div> {/* Bungkus elemen gambar dan teks */}
+                <img src={mandiri} alt="Logo Bank" className="h-[60px] w-[100px]" /> {/* Tambahkan gambar logo */}
+                    <p className='text-gray-500 text-sm font-medium mx-4 -mt-3'>1260007349763</p> {/* Nomor rekening */}
+                    <p className='text-gray-500 text-sm font-medium mx-4'>Masdian Haerunisah</p> {/* Nama pemilik rekening */}
+                </div>
+                <div> {/* Bungkus elemen gambar dan teks */}
+                <img src={bni} alt="Logo Bank" className="h-[30px] w-[100px]" /> {/* Tambahkan gambar logo */}
+                    <p className='text-gray-500 text-sm font-medium mx-4 mt-2'>1539447176</p> {/* Nomor rekening */}
+                    <p className='text-gray-500 text-sm font-medium mx-4'>Masdian Haerunisah</p> {/* Nama pemilik rekening */}
+                </div>
+                <div> {/* Bungkus elemen gambar dan teks */}
+                <img src={bri} alt="Logo Bank" className="h-[30px] w-[100px]" /> {/* Tambahkan gambar logo */}
+                    <p className='text-gray-500 text-sm font-medium mx-4 mt-2'>043401039179502</p> {/* Nomor rekening */}
+                    <p className='text-gray-500 text-sm font-medium mx-4'>Masdian Haerunisah</p> {/* Nama pemilik rekening */}
+                </div>  
             </div>
           </div>
 
