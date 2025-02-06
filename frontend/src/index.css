@@ -28,3 +28,7 @@ a.active hr{
         color: white;
     }
   }
+
+  body {
+    background-color: #FDCED6;
+  }
